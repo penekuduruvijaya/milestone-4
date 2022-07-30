@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--It opens the linked document in the top frame (full body) of another window-->
+        
+        <base target="_top">
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+       
+        <title>Registration Form </title>
+        
+            <link rel="icon" type="image/icon" href="icon2.png">
+
+    <style>
+              
+        h1{
+            text-align:center;
+            width:"100%";
+        }
+
+        
+        fieldset{
+            margin:auto;
+            border-top:4px solid #93aba7;
+            border-bottom:4px solid #93aba7;
+            width:600px; height:100%;
+            
+            border-radius:15px;
+            }
+   
+            
+            button[type=submit]:hover{
+                   background-color: #22f160;
+                 
+            
+                }
+                
+                 
+                    
+                    button[type=reset]:hover{
+                 background-color:#3179f6;
+                   
+                }
+
+            
+                *{
+               box-sizing:border-box;
+               border-radius: 5px;
+           
+            }
+
+
+            .form-main-heading{
+                   width:"100%";
+                   text-align:center;
+                   background-color: #fff;
+                   color: #333;
+                   border-top: 4px solid #49c1a2;
+                   border-radius: 15px;
+                                   
+                }
+
+
+                .form-grp{
+                             text-align:justify;
+                             color: rgb(233, 220, 220);
+                           
+                            
+                                                      
+                            }
+                
+
+                .parent-grp{
+                    color:rgb(233, 225, 214);
+                    text-decoration:underline;
+                }
+
+
+                .form-address{
+                    color:white;
+                     text-decoration:underline;
+                }
+
+               
+
+            body{
+                
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                background:linear-gradient(to bottom left, #660066 0%, #ff0066 100%);
+                color: rgb(26, 25, 25);
+
+                }  
+    </style>
+    
+     
+    </head>
+
+<body style="width:100%;">
+   
+
+    <!-- action="backend.php" says that information in the form is submitted in another form-->
+        <form action="backend.php">
+
+            <!--form wrap start-->
+            <div class="form-main-heading">
+            
+                <h1>Registration of Student for an Online TCS EXAM
+                    
+                </h1>
+           
+            <br>
+        </div>
+            <br>
+                <br>
+
+
+            <!--form start-->
+            <form>
+                 
+                <fieldset>
+                    <br>
+                         <br>
+                
+                 <div class="form-grp">
+                    
+                    <label for="nameofperson">Name:</label>
+                   
+                    <input type="text" id="nameofperson" name="nameofperson" value=" "><br><br>
+                
+                </div>
+                
+                <div class="form-grp">
+                    
+                    <label for="rollno.">Rollno.</label>
+                    
+                    <input type="text" id="roll-no." name="Rollno." value=" "><br><br>
+            <br>
+        </div>
+                 <div class="parent-grp">
+                    
+                    <label for="Parentdetails"> Parent Details: </label>
+                    
+                    </div>
+                
+            <br>
+                
+                <div class="form-grp">
+               
+                    <label for="fathersname"> Father's Name:</label>
+                  
+                    <input type="text" id="fathersname" name="Father's Name" size="10" value="">
+                  
+                  
+                  
+                     <label for="mothersname"> Mother's Name:</label>
+                
+                     <input type="text" id="mothersname" name="Mother's Name" size="15" value="">
+                </div>
+            <br>
+        <br>
+                
+        <div class="form-grp">
+                
+            <label for="Aadharnumber">Aadhar Number:</label>
+                <input type="text" id="aadharnumber" name="Aadhar Number" value=""><br>
+                    </div>
+
+                    <br>
+                <br>
+
+
+                    <div class="form-address">
+                        Address:
+                        <br>
+                    <br>
+                       
+                    <textarea rows="5" cols="50" name="address">
+                            
+                    </textarea>
+                        
+                    </div> <br><br>
+                    
+                    <div class="form-grp">
+                    
+                        <label for="Qualifications">Qualificatons:</label>
+                    
+                    <select id="qualifications">
+                        <option value="UG">UG</option>
+                        <option value="PG">PG</option>
+                        <option value="Phd">Phd</option>
+                        <option value="higherschool">Higher School</option>
+                        <option value="Kindergarden">Kindergarden</option>
+                        <option value="secondaryschool">secondaryschool</option>
+                        <option value="uneducated">Uneducated</option>
+                    </select>
+                        </div>   
+                        
+                        <br>
+                <br>             
+            
+            <div class="form-grp">
+                
+                <label for="courses">Courses Completed:</label>
+            
+            <select id="coursescompleted">
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="IT">IT</option>
+                <option value="Mech">Mech</option>
+                <option value="Civil">Civil</option>
+                <option value="Arts">Arts</option>
+            </select>
+            
+        </div>
+        <br>
+            <br>
+            
+            <div class="form-grp">
+               
+                <label for="Cgpa">Xth CGPA:</label>
+                <input type="text" id="cgpa" name="Xthcgpa" size="15" value="">
+                
+                <label for="Cgpa">XIIth CGPA:</label>
+                <input type="text" id="cgpa" name="XIIthcgpa" size="15" value="">
+            
+            </div>
+                    
+            <br>
+        <br>
+              
+        <div class="form-grp">
+                Upload Your File/Resume:
+            <input type="file" id="myFile" name="filename">
+        </div>
+       
+        <br>
+    <br>
+        
+    <div class="form-grp">
+            Upload Your Photo:
+            <input type="file" id="myphoto" name="filename">
+        </div>
+        
+        <br>
+       
+     <br>
+                        
+           </fieldset>
+                 <br>
+            <br>
+        
+        </div>
+    
+    </div>
+           <center>
+          
+            <button type="submit" class="submit">Submit</button>
+          
+            <button type="reset" class="reset">Reset</button>
+      
+        </center>
+        
+        <br>
+    <br>
+           
+            
+     </form>
+    
+</body>
+</html>
